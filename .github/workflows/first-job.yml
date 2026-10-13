@@ -1,0 +1,14 @@
+name: my first job
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print a message
+      - run: echo "hello!"
+      - name: check linux version
+      - run: uname-a
+      - name: show current directory
+      - run: pwd
+      - name: list files
+      - run: la-la
